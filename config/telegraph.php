@@ -13,7 +13,7 @@ return [
      * Sets Telegraph messages default parse mode
      * allowed values: html|markdown|MarkdownV2
      */
-    'default_parse_mode' => Telegraph::PARSE_HTML,
+    'default_parse_mode' => Telegraph::PARSE_MARKDOWN,
 
     /*
      * Sets the handler to be used when Telegraph
@@ -21,7 +21,7 @@ return [
      *
      * For reference, see https://defstudio.github.io/telegraph/webhooks/overview
      */
-    'webhook_handler' => DefStudio\Telegraph\Handlers\EmptyWebhookHandler::class,
+    'webhook_handler' => \App\Telegram\Handler::class,
 
     /*
      * Sets the webhook URL that will be exposed by the server,

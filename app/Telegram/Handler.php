@@ -2,7 +2,9 @@
 
 namespace App\Telegram;
 
-class Handler
+use DefStudio\Telegraph\Handlers\WebhookHandler;
+
+class Handler extends WebhookHandler
 {
 
 }
